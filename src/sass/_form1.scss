@@ -1,0 +1,70 @@
+@use './variables' as *;
+
+
+.formContainer {
+    overflow: hidden;
+    .formN {
+        flex-grow: 1;
+        padding: 40px 60px;
+        min-height: inherit;
+        .formInputs {
+            position: relative;
+            label {
+                color: $marineBlue;
+            }
+            .errorMsg {
+                color: $strawberryRed;
+                font-weight: 700;
+                margin-left: auto;
+                position: absolute;
+                right: 0;
+            }
+            input {
+                padding: .5em;
+                border-radius: 5px;
+                width: 100%;
+                outline: none;
+                font-size: 1.1rem;
+                
+                
+                
+                transition: all .2s ease-in-out;
+
+                &::placeholder {
+                    font-weight: 500;
+                    color: $coolGray;
+                    font-size: 1rem;
+                }
+                &:focus {
+                    border-color: $purplishBlue;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+
+
+
+    @media (max-width: 768px) {
+        & {
+            margin: 0 !important;
+            padding: 0 !important;
+            background-color: transparent;
+            .formN {
+                position: absolute;
+                top: 10rem;
+                padding: 30px;
+                background-color: $white;
+                left: 50%;
+                transform: translateX(-50%) !important;
+                top: 7rem;
+                min-height: fit-content;
+                width: 90%;
+                border-radius: 10px;
+            }
+            
+        }
+    }
+}
+

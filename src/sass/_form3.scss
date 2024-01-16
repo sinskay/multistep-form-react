@@ -1,0 +1,96 @@
+@use './variables' as *;
+
+
+.formN {
+    .addons {
+        .selectedAddon {
+            background-color: $magnolia;
+        }
+        .addon {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding-left: 1.5rem;
+            border: 1px solid $lightGray;
+            border-radius: 7px;
+            padding: 1em;
+            transition: all .2s ease;
+            &:hover {
+                border-color: $purplishBlue;
+            }
+            &:not(:last-child) {
+                margin-bottom: 1.1rem;
+            }
+            .addonCheck {
+                cursor: pointer;
+                width: 20px;
+                height: 20px;
+                transition: all .1s ease;
+                &:checked  {
+                    background-color: $purplishBlue;
+                    border: none;
+                    box-shadow: none;
+                }
+                &:focus {
+                    border-color: $lightGray;
+                    box-shadow: none;
+                }
+            }
+
+
+            div {
+                margin-left: 1.5rem;
+
+                .addonName {
+                    color: $marineBlue;
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                    margin: 0;
+                }
+                .addDescription {
+                    margin: 0;
+                    color: $coolGray;
+                }
+            }
+            .addonPrice {
+                color: $purplishBlue;                    
+                font-weight: 500;
+                margin-left: auto;
+                margin-bottom: 0;
+            }
+
+
+
+
+
+
+            label {
+                cursor: pointer;
+                margin-left: 1.5rem;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                    margin: 0;
+                }
+
+                div {
+                    .addonName {
+                        color: $marineBlue;
+                        font-weight: 500;
+                        font-size: 1.1rem;
+                    }
+                    .addDescription {
+                        color: $coolGray;
+                    }
+                }
+                .addonPrice {
+                    color: $purplishBlue;                    
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+

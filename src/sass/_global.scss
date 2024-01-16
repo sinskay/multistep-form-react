@@ -1,0 +1,88 @@
+@use './variables'as *;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif !important;
+    background-color: $magnolia !important;
+    position: relative;
+    height: 100vh;
+}
+
+
+.app {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    @media (max-width: 768px) {
+        & {
+            position: relative;
+            left: 0;
+            top: 0;
+            transform: translate(0,0);
+        }
+    }
+}
+
+
+.formContainer {
+    padding: 15px !important;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    min-height: 547px;
+    max-width: 1000px !important;
+}
+
+.formInfo {
+    .formTitle {
+        font-weight: 700;
+        color: $marineBlue;
+    }
+    .formDescription {
+        color: $coolGray;
+    }
+    margin-bottom: 2rem;
+}
+
+.nextBtn {
+    background-color: $marineBlue;
+    color: $white;
+    border: none;
+    font-weight: 700;
+    padding: .6em 1.2em;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 4rem;
+    bottom: 1rem;
+    @media (max-width: 768px) {
+        bottom: -10%;
+        transform: translateY(100%);
+    }
+}
+.backBtn {
+    color: $coolGray;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 4rem;
+    bottom: 1.5rem;
+    @media (max-width: 768px) {
+        bottom: -10%;
+        transform: translateY(100%);
+    }
+    &:hover{
+        color: $marineBlue;
+    }
+}
+
+
+
+button:disabled {
+    opacity: 50%;
+}

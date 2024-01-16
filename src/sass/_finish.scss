@@ -1,0 +1,30 @@
+@use './variables' as *;
+
+
+
+.formN {
+    .Finish {
+        
+        
+        text-align: center;
+        transform: translateY(50%);
+        img {
+            width: 80px;
+            margin: 0 auto;
+        }
+        .formTitle {
+            color: $marineBlue;
+            margin-top: 1.4rem;
+            margin-bottom: 1.2rem;
+        }
+        .formDescription {
+            margin: 0 auto;
+            max-width: 430px;
+            color: $coolGray;
+        }
+
+        @media (max-width: 768px) {
+            transform: translateY(0);
+        }
+    }
+}

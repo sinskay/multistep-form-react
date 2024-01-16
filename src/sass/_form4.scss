@@ -1,0 +1,86 @@
+@use './variables' as *;
+
+
+.formN {
+    .summary {
+        .summaryDetails {
+            background-color: $magnolia;
+            border-radius: 10px;
+            padding: 1.3rem;
+            .summaryTop {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                div {
+                    p:first-child {
+                        color:  $marineBlue;
+                        font-size: 1.05rem;
+                        font-weight: 700;
+                        margin-bottom: 0;
+                    }
+                    .changePlan {
+                        text-decoration: underline;
+                        cursor: pointer;
+                        color: $coolGray;
+                        font-weight: 500;
+                        margin-bottom: 0;
+                        &:hover {
+                            color: $purplishBlue;
+                        }
+                    }
+                }
+                .chosedPlanPrice {
+                    color: $marineBlue;
+                    font-weight: 700;
+                    font-size: 1.05rem;
+                }
+            }
+            hr {
+                color: $coolGray;
+            }
+            .chosedAddons {
+                .chosedAddon {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .chosedAddonName {
+                        color: $coolGray;
+                        font-weight: 500;
+                    }
+                    .chosedAddonPrice {
+                        color: $marineBlue;
+                        font-weight: 500;
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+        .summaryTotal {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p:first-child {
+                color: $coolGray;
+                font-weight: 500;
+                margin-left: 1.3rem;
+                margin-top: 2rem;
+            }
+            .totalPrice {
+                color: $purplishBlue;
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin-right: 1.3rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+
+.confirm {
+    transition: all .3s ease;
+    &:hover {
+        background-color: $purplishBlue;
+        opacity: 60%;
+    }
+}
