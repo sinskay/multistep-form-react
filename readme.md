@@ -1,7 +1,7 @@
 # Multistep Form
 
 
-[![React Version](https://img.shields.io/badge/React-%5E16.8.0-blue.svg)](https://reactjs.org/)
+[![React Version](https://img.shields.io/badge/React-%5E18.2.0-blue.svg)](https://reactjs.org/)
 
 ## Description
 
